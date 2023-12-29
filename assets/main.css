@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Rubik:wght@500;700&display=swap');
+:root{
+    --darkblue:hsl(230, 17%, 14%);
+    --lightblue:hsl(228, 12%, 44%);
+    --cardBG:hsl(227, 47%, 96%);
+    --facebook:hsl(208, 92%, 53%);
+    --instagram: linear gradient hsl(37, 97%, 70%) to hsl(329, 70%, 58%); 
+    --twitter:hsl(203, 89%, 53%) ;
+    --youtube: hsl(348, 97%, 39%);
+    --green:hsl(163, 72%, 41%);
+}
+* {
+  margin:0
+  padding:0
+  box-sizing: border-box
+}
+
+body{
+     background-color: #fff;
+     color: #000
+}
+html, body{
+    font-family:Inter, san-serif; 
+ 
+}
+
+.container {
+    padding: 0 9rem
+    
+}
+
+a{
+    text-decoration:none;
+}
+
+ul{
+    list-style: none
+}
+
+nav{
+    max-width: 1120px;
+    margin: auto;
+    padding: 1.5rem 0;
+    display: flex;
+    height: 2rem;
+    justify-content: space-between;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    background-color: white;
+    flex-wrap: nowrap;
+  
+}
+.title{
+    color: var(--darkblue);
+    font-size: 1.5rem;
+    font-weight:bold;
+}
+.text-sub{
+    color:var(--lightblue);
+    font-size:10px
+    font-weight:black;
+}
+.column{
+    display:flex;
+    flex-direction:column
+
+}
+
+.row{
+    display:flex;
+    flex-direction:row
+    gap:8px;
+    justify-content:space-between;
+}
+/* Social card container */
+.social-cards {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+ 
+}
+
+
+.social-card {
+    border-top: 5px solid;
+    padding: 20px;
+    width: calc(22% - 20px); 
+    text-align: center;
+    background-color: var(--cardBG);
+    border-radius:0.3rem;
+    justify-content:center;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+
+.facebook {
+    border-color: hsl(208, 92%, 53%); 
+}
+
+.twitter {
+    border-color:hsl(203, 89%, 53%); 
+}
+
+.instagram {
+    border-color: #e4405f; 
+}
+
+.youtube {
+    border-color: hsl(348, 97%, 39%);
+}
+
+.row-between {
+    display: flex;
+    justify-content: normal;
+    align-items: center;
+    gap:0.3rem;
+}
+
+.icon {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+h2 {
+    font-size: 18px;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+span {
+    display: block;
+    color: #555;
+    font-size: 14px;
+}
+.fa-facebook-f{
+    color:var(--facebook);
+}
+.fa-twitter{
+    color:var(--twitter);
+}
+.fa-youtube{
+    color:var(--youtube);
+}
+.fa-instagram{
+    color:var(--instagram);
+}
+
+p {
+    font-size: 12px;
+    color:var(--lightblue);
+}
+
+.year{
+    font-size:2.5rem;
+}
+
+.followers{
+   
+    text-transform: uppercase;
+    font-weight: 100;
+    letter-spacing: 0.2rem;
+}
+
+.text-green {
+    color:var(--green)  ;
+    font-weight:700;
+    font-size:small;
+}
+.text-grey {
+    color:var(--lightblue)   ;
+  
+}
+
+.cardbottom{
+  
+    padding: 20px;
+    width: calc(22% - 20px); 
+    text-align: center;
+    background-color: var(--cardBG);
+    border-radius:0.3rem;
+    justify-content:space-between;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.mainbottom{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+}
+
+.page{
+    font-size:0.8rem;
+    font-weight:bold;
+    
+}
